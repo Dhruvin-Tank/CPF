@@ -7,7 +7,7 @@ int main()
     string StudentName;
     string Branch;
     short int Semester;
-    short int MobileNumber;
+    int MobileNumber;
    
     // Display header of the program
     cout << "**************************************************" << endl;
@@ -20,7 +20,7 @@ int main()
     
     cout << "Enter Student Name :";
     cin.ignore();
-    getline(cin, studentName);
+    getline(cin,StudentName);
 
     cout << "Enter Branch :";
     cin >> Branch;
