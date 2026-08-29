@@ -7,7 +7,7 @@ int main()
     // Variable declarations
     string EnrollmentNumber, StudentName, Branch;
     int Semester;
-    short int MobileNumber;
+    int MobileNumber;
     short int MathematicsMarks, PhysicsMarks, ComputerMarks;
     int TotalMarks;
     float AverageMarks, Percentage;
@@ -58,7 +58,7 @@ M:  cout << left << setw(38) << "Enter Mathematics Marks" << ":";
     cin >> ComputerMarks;
     cout << endl;
 
-    if (MathematicsMarks<0 && MathematicsMarks>100 && PhysicsMarks>0 && PhysicsMarks<100 && ComputerMarks<0 && ComputerMarks>100)
+    if (MathematicsMarks<0 || MathematicsMarks>100 || PhysicsMarks<0 || PhysicsMarks>100 || ComputerMarks<0 || ComputerMarks>100)
     {
         cout<<"Enter valide Marks";
         goto M;
